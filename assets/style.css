@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .col {
@@ -23,6 +24,7 @@
     font-size: large;
     font-weight: 600;
     color: black;
+    line-height: 2em;
 }
 
 .header {
@@ -32,6 +34,10 @@
     right: 0;
     left: 0;
     z-index: 1;
+    background-color: #fff;
+}
+
+.heedeer {
     background-color: #fff;
 }
 
@@ -57,7 +63,8 @@
     color: rgb(134, 132, 132);
     justify-content: space-around;
     margin-left: 15px;
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 3em;
 }
 
 .middle a:hover {
@@ -66,6 +73,7 @@
 
 .icon {
     float: right;
+    line-height: 3em;
 }
 
 .icon i {
@@ -82,7 +90,7 @@
 
 .img-home {
     background-image: url(/assets/images/home-bg.jpg);
-    height: 600px;
+    height: 100vh;
     background-color: rgb(226, 196, 196);
     background-size: cover;
     background-position: center;
@@ -97,39 +105,63 @@
 }
 
 .text-home h1 {
-    font-size: 50px;
+    font-size: 4rem;
     line-height: 50px;
 }
 
 .text-home h2 {
     font-weight: lighter;
-    font-size: 23px;
+    font-size: 4vh;
     color: #eb46a1;
-    line-height: 51px;
+    line-height: 6vh;
 }
 
-.text-home a {
+.text-home a,
+.videotexta {
     line-height: 50px;
-    border: 1px solid;
+    border: 0.5vh solid black;
     padding: 8px 30px;
     background-color: #080506;
     text-decoration: none;
     color: white;
-    border-radius: 50px;
+    border-radius: 3vh;
     font-size: smaller;
+}
+
+.text-home a:hover,
+.videotexta:hover {
+    background-color: #cd0473;
+    border: 0.5vh solid #cd0473;
+    animation: hovera ease-in 0.5s;
+}
+
+@keyframes hovera {
+    from {
+        background-color: black;
+        border: 0.5vh solid black;
+    }
+    to {
+        background-color: #cd0473;
+        border: 0.5vh solid #cd0473;
+    }
 }
 
 .text-home p.text1 {
     background-color: rgb(216, 182, 182);
-    width: 250px;
-    padding: 2px;
+    width: 45vh;
+    font-size: 3vh;
+    padding: 3px;
 }
 
 .text-home p.text2 {
     color: gray;
     margin-bottom: 15px;
     margin-top: 10px;
+    font-size: 1em;
 }
+
+
+/* about us */
 
 .videotext1,
 .videotext2 {
@@ -137,28 +169,14 @@
     margin-bottom: 15px;
 }
 
-.videotexta {
-    line-height: 50px;
-    border: 1px solid;
-    padding: 8px 30px;
-    background-color: #080506;
-    text-decoration: none;
-    color: white;
-    border-radius: 50px;
-    font-size: smaller;
-}
-
-.text-home a:hover {
-    background-color: #9d0057;
-}
-
 .About {
     margin: 30px 0;
 }
 
 .About h2 {
-    line-height: 45px;
     background-color: #fdeef1;
+    line-height: 4rem;
+    font-size: xx-large;
 }
 
 .About span {
@@ -169,7 +187,7 @@ video {
     width: 100%;
     height: 100%;
     border: white 10px solid;
-    box-shadow: gray 1px 1px 1px 1px;
+    box-shadow: #cecaca 0px 0px 5px 1px;
 }
 
 .Video {
@@ -202,6 +220,7 @@ video {
     /* text-align: left; */
     /* margin-top: 85px; */
     line-height: 60px;
+    font-size: 3em;
 }
 
 
@@ -225,12 +244,11 @@ video {
 }
 
 .option4 {
-    padding: 15px;
+    padding: 1rem 2rem;
 }
 
 .about4 {
     margin-top: 50px;
-    margin-bottom: 55px;
 }
 
 .about {
@@ -240,7 +258,7 @@ video {
 }
 
 .about img {
-    padding: 5%;
+    padding: 2%;
 }
 
 .option .footer .footer-option {
@@ -285,7 +303,7 @@ item
     margin-top: 2px;
     display: grid;
     /* grid-template-columns: repeat(4, 1fr); */
-    grid-column-gap: 15px;
+    grid-column-gap: 1px;
     /* grid-template-columns: repeat(auto-fit, value); */
     /* minmax(200px, 1fr) */
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
@@ -295,11 +313,11 @@ item
 .image-item,
 .image-item4 {
     height: 300px;
-    box-shadow: rgb(0 0 0) 0px 1px 5px;
+    box-shadow: #d8d2d2 0px 0px 25px 4px;
     position: relative;
     text-align: center;
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
 }
 
 .image-item img {
@@ -309,8 +327,15 @@ item
     margin-top: 30px;
 }
 
-.image-item img:hover {
-    transform: scale(1.1);
+.image-item:hover img,
+.image-item4:hover img {
+    animation: imgitem 1s ease;
+}
+
+@keyframes imgitem {
+    to {
+        transform: scale(1.1);
+    }
 }
 
 .image-item4 img {
@@ -320,15 +345,12 @@ item
     margin-top: 30px;
 }
 
-.image-item4 img:hover {
-    transform: scale(1.1);
-}
-
 .name-item {
     margin-top: 20px;
     font: 1em;
     font-weight: 900;
     font-family: 'Yaldevi', sans-serif;
+    text-indent: 100;
 }
 
 .price-item-after {
@@ -344,6 +366,7 @@ item
     font-weight: bolder;
     font-size: 10px;
     margin-right: 10px;
+    z-index: 1;
 }
 
 .discount {
@@ -366,45 +389,43 @@ item
 }
 
 .cart {
-    display: flex;
-    z-index: 1;
+    display: none;
     position: absolute;
     font-size: inherit;
     font-family: inherit;
-    color: white;
+    color: rgb(255, 255, 255);
     outline: none;
     border: none;
-    background-color: #fff;
+    background-color: rgb(207, 27, 102);
     align-items: center;
-    top: 208px;
+    top: 12rem;
     right: 0;
     left: 0;
     height: 40px;
 }
 
-.cart::before {
-    display: block;
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fc2f70;
-    transform-origin: center top;
-    transform: scaleY(0);
-    transition: transform 0.25s ease-in-out;
+@keyframes itemcart {
+    from {
+        transform: translateY(30px);
+        background-color: transparent;
+    }
+    to {
+        transform: translateY(1px);
+    }
+    20% {
+        background-color: transparent;
+        color: transparent;
+    }
+    75% {
+        background-color: rgb(207, 27, 102);
+        color: white;
+    }
 }
 
-.cart:hover {
-    cursor: pointer;
-}
-
-.cart:hover::before {
-    display: block;
-    transform-origin: center bottom;
-    transform: scaleY(1);
+.image-item:hover .cart,
+.image-item4:hover .cart {
+    display: flex;
+    animation: itemcart ease 2s;
 }
 
 .cart div {
@@ -415,8 +436,8 @@ item
 }
 
 .cart .c4 {
-    padding-right: 77px;
-    padding-left: 77px;
+    padding-right: 74px;
+    padding-left: 74px;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
@@ -597,7 +618,7 @@ item
 
 .nav__overlay {
     position: fixed;
-    top: 42px;
+    top: 4rem;
     right: 0;
     bottom: 0;
     left: 0;
@@ -606,13 +627,15 @@ item
 }
 
 a.menu-mobile-link {
-    border: 1px solid;
+    border: 1px silver;
     margin: 12px;
-    font-size: 13px;
+    font-size: 18px;
     text-align: left;
     color: gray;
+    padding-left: 20px;
     background-color: #fff;
-    box-shadow: #909090 0px 9px 42px 2px;
+    box-shadow: #909094 0px 21px 122px -5px;
+    margin: 2vh 4vh;
 }
 
 .menu-mobile-link a:hover {
@@ -621,13 +644,14 @@ a.menu-mobile-link {
 
 .nav__mobile {
     position: fixed;
-    top: 43px;
+    top: 4rem;
     left: 0;
-    width: 280px;
+    right: 0;
+    /* width: 280px; */
     max-width: 100%;
-    background-color: rgb(255, 255, 255);
-    transform: translateX(-100%);
-    z-index: 100;
+    background-color: rgb(228 232 229);
+    transform: translateY(-150%);
+    z-index: -1;
 }
 
 .menu-mobile-link {
@@ -638,12 +662,19 @@ a.menu-mobile-link {
     color: black;
 }
 
-.nav__input:checked~.nav__overlay {
-    display: block;
+.nav__input:checked~.nav__mobile {
+    transform: translateY(0%);
+    transition: 0.8s ease-out;
+    animation: fadein 0.8s ease-out;
 }
 
-.nav__input:checked~.nav__mobile {
-    transform: translateX(0%);
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1123px) and (min-width: 741px) {
@@ -657,7 +688,6 @@ a.menu-mobile-link {
         float: inherit;
     }
     .text-home {
-        margin-top: 180px;
         background-color: #f8e3e8;
         text-align: left;
         line-height: 15px;
@@ -710,11 +740,20 @@ a.menu-mobile-link {
     }
     .img-home {
         background-image: url(/assets/images/hong.jpg);
-        height: 600px;
+        height: 100vh;
         background-color: rgb(226, 196, 196);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    .Products-flo {
+        width: 95%;
+    }
+    .text-contact {
+        border: 1px solid gray;
+        padding: 10px;
+        margin-top: 1px;
+        border-radius: 10px;
     }
 }
 
@@ -725,6 +764,9 @@ a.menu-mobile-link {
         border: 1px solid black;
         border-radius: 5px;
         font-size: 25px;
+        padding: 0 5px;
+        margin-left: 3vh;
+        /*  margin-top: 1vh; */
     }
     .nav__pc {
         display: none;
@@ -734,7 +776,7 @@ a.menu-mobile-link {
     }
     .img-home {
         background-image: url(/assets/images/hong.jpg);
-        height: 600px;
+        height: 100vh;
         background-color: rgb(226, 196, 196);
         background-size: cover;
         background-position: center;
@@ -785,13 +827,14 @@ a.menu-mobile-link {
         padding: 0 20px;
         padding-bottom: 40px;
     }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    .text-home h1 {
+        font-size: 7vh;
+        line-height: 50px;
     }
-    to {
-        opacity: 1;
+    .option4 {
+        padding: 0rem 2rem;
+    }
+    .Products-flo {
+        width: 95%;
     }
 }
