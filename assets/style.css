@@ -545,17 +545,17 @@ item
     cursor: pointer;
 }
 
+.form-groupsend:hover {
+    border: solid 2px #cd0473;
+    background-color: #cd0473;
+}
+
 .form-inputsend {
     background: transparent;
     border: 0;
     outline: 0;
     flex-grow: 1;
-    color: white;
-}
-
-.form-groupsend:hover {
-    border: solid 2px #cd0473;
-    background-color: #cd0473;
+    color: #fff;
 }
 
 .footer {
