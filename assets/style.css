@@ -702,6 +702,14 @@ a.menu-mobile-link {
 }
 
 @media (max-width: 1123px) and (min-width: 741px) {
+    .header,
+    .heedeer {
+        background-color: #fff;
+    }
+    .icon {
+        float: right;
+        margin-top: 1%;
+    }
     .nav__bars-btn i {
         display: block;
         float: left;
