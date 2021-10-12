@@ -73,7 +73,7 @@
 }
 
 .middle {
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 .middle a:hover {
@@ -129,7 +129,7 @@
 .videotexta {
     line-height: 50px;
     border: 0.5vh solid black;
-    padding: 8px 30px;
+    padding: 7px 15px;
     background-color: #080506;
     text-decoration: none;
     color: white;
@@ -157,9 +157,10 @@
 
 .text-home p.text1 {
     background-color: rgb(216, 182, 182);
-    width: 45vh;
+    width: 35vw;
     font-size: 3vh;
     padding: 3px;
+    line-height: 20px;
 }
 
 .text-home p.text2 {
@@ -196,7 +197,7 @@
 video {
     width: 100%;
     height: 100%;
-    border: white 10px solid;
+    border: white 5px solid;
     box-shadow: #cecaca 0px 0px 5px 1px;
 }
 
@@ -207,8 +208,8 @@ video {
 .Video h2 {
     position: absolute;
     top: 170px;
-    right: 21px;
-    left: 21px;
+    right: 14px;
+    left: 14px;
     font-weight: 900;
     color: #000;
     /* border: 1px solid white;
@@ -327,6 +328,7 @@ item
     position: relative;
     text-align: center;
     cursor: pointer;
+    margin: 3px;
     margin-top: 10px;
 }
 
@@ -462,6 +464,7 @@ item
     text-align: left;
     box-shadow: lightgrey 0px 1px 10px 0px;
     padding: 5px;
+    border-radius: 3px;
 }
 
 .imgcostumer {
@@ -484,7 +487,7 @@ item
 .Comments p {
     font-size: 13px;
     color: gray;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .imgcostumer img {
@@ -533,18 +536,18 @@ item
     border: 1px solid gray;
     padding: 10px;
     margin-top: 55px;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .form-groupsend {
     margin-top: 15px;
     border: 2px solid rgb(0 0 0);
-    padding: 6px;
+    padding: 6px 2px;
     display: flex;
     border-radius: 40px;
     background-color: rgb(0 0 0);
     color: #fff;
-    width: 100px;
+    width: 9vw;
     cursor: pointer;
 }
 
@@ -600,8 +603,8 @@ item
 }
 
 .footer1 a:hover {
-    color: #cd0473;
     cursor: pointer;
+    color: #cd0473;
 }
 
 .img-footer {
@@ -621,6 +624,10 @@ item
 .bottom-footer span {
     color: #cd0473;
     border-right: 1px solid black;
+}
+
+.bottom p {
+    margin-bottom: 5vh;
 }
 
 
@@ -730,9 +737,6 @@ a.menu-mobile-link {
         font-size: 12px;
         top: 0px;
         left: 10px;
-    }
-    .bottom p {
-        margin-bottom: 5vh;
     }
     .images {
         display: grid;
