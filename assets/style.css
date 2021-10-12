@@ -157,7 +157,7 @@
 
 .text-home p.text1 {
     background-color: rgb(216, 182, 182);
-    width: 35vw;
+    width: 90%;
     font-size: 3vh;
     padding: 3px;
     line-height: 20px;
@@ -434,8 +434,8 @@ item
 }
 
 .cart div {
-    padding-right: 46px;
-    padding-left: 46px;
+    padding-right: 40px;
+    padding-left: 40 px;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
