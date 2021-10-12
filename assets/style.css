@@ -18,13 +18,18 @@
     margin-bottom: 8px;
 }
 
+.padding-nav {
+    padding-top: 30px;
+}
+
 .logo a {
     float: left;
     text-decoration: none;
     font-size: large;
     font-weight: 600;
     color: black;
-    line-height: 2em;
+    margin-top: 1vh;
+    /* line-height: 2em; */
 }
 
 .header {
@@ -53,7 +58,7 @@
 
 .logo span {
     text-decoration: none;
-    font-size: large;
+    font-size: x-large;
     font-weight: 600;
     color: rgb(190, 41, 153);
 }
@@ -63,8 +68,12 @@
     color: rgb(134, 132, 132);
     justify-content: space-around;
     margin-left: 15px;
-    font-size: 15px;
-    line-height: 3em;
+    font-size: 2vh;
+    margin-top: 5vh;
+}
+
+.middle {
+    margin-top: 1vh;
 }
 
 .middle a:hover {
@@ -73,11 +82,11 @@
 
 .icon {
     float: right;
-    line-height: 3em;
+    margin-top: 2vh;
 }
 
 .icon i {
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 5px;
 }
 
@@ -132,7 +141,7 @@
 .videotexta:hover {
     background-color: #cd0473;
     border: 0.5vh solid #cd0473;
-    animation: hovera ease-in 0.5s;
+    animation: hovera ease-in 0.35s;
 }
 
 @keyframes hovera {
@@ -158,6 +167,7 @@
     margin-bottom: 15px;
     margin-top: 10px;
     font-size: 1em;
+    line-height: 4vh;
 }
 
 
@@ -254,11 +264,11 @@ video {
 .about {
     display: flex;
     width: 100%;
-    height: 70px;
 }
 
 .about img {
-    padding: 2%;
+    height: 20%;
+    padding: 5px;
 }
 
 .option .footer .footer-option {
@@ -267,13 +277,13 @@ video {
 }
 
 .option-title {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
+    margin-top: 2vh;
 }
 
 .option p {
     font-size: small;
-    margin-top: 5px;
     color: rgb(83, 74, 74);
 }
 
@@ -303,7 +313,7 @@ item
     margin-top: 2px;
     display: grid;
     /* grid-template-columns: repeat(4, 1fr); */
-    grid-column-gap: 1px;
+    grid-column-gap: 3px;
     /* grid-template-columns: repeat(auto-fit, value); */
     /* minmax(200px, 1fr) */
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
@@ -313,11 +323,11 @@ item
 .image-item,
 .image-item4 {
     height: 300px;
-    box-shadow: #d8d2d2 0px 0px 25px 4px;
+    box-shadow: #d8d2d2 0px 0px 5px 1px;
     position: relative;
     text-align: center;
     cursor: pointer;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .image-item img {
@@ -346,11 +356,9 @@ item
 }
 
 .name-item {
-    margin-top: 20px;
-    font: 1em;
-    font-weight: 900;
-    font-family: 'Yaldevi', sans-serif;
-    text-indent: 100;
+    margin-top: 15px;
+    font-size: 3vh;
+    font-weight: bold;
 }
 
 .price-item-after {
@@ -408,24 +416,19 @@ item
     from {
         transform: translateY(30px);
         background-color: transparent;
-    }
-    to {
-        transform: translateY(1px);
-    }
-    20% {
-        background-color: transparent;
         color: transparent;
     }
-    75% {
+    to {
         background-color: rgb(207, 27, 102);
         color: white;
+        transform: translateY(1px);
     }
 }
 
 .image-item:hover .cart,
 .image-item4:hover .cart {
     display: flex;
-    animation: itemcart ease 2s;
+    animation: itemcart ease 1s;
 }
 
 .cart div {
@@ -585,8 +588,20 @@ item
     color: rgb(119, 116, 116);
 }
 
+.footer1 a {
+    font-size: small;
+    color: rgb(119, 116, 116);
+    display: block;
+}
+
 .footer1 p:hover {
     color: #cd0473;
+    cursor: pointer;
+}
+
+.footer1 a:hover {
+    color: #cd0473;
+    cursor: pointer;
 }
 
 .img-footer {
@@ -618,7 +633,7 @@ item
 
 .nav__overlay {
     position: fixed;
-    top: 4rem;
+    top: 3rem;
     right: 0;
     bottom: 0;
     left: 0;
@@ -634,7 +649,7 @@ a.menu-mobile-link {
     color: gray;
     padding-left: 20px;
     background-color: #fff;
-    box-shadow: #909094 0px 21px 122px -5px;
+    box-shadow: #909094 0px 33px 121px -3px;
     margin: 2vh 4vh;
 }
 
@@ -644,13 +659,14 @@ a.menu-mobile-link {
 
 .nav__mobile {
     position: fixed;
-    top: 4rem;
+    top: 3rem;
     left: 0;
     right: 0;
     /* width: 280px; */
     max-width: 100%;
-    background-color: rgb(228 232 229);
+    background-color: rgb(249 252 250);
     transform: translateY(-150%);
+    transition: 0.8s ease-in-out;
     z-index: -1;
 }
 
@@ -664,8 +680,8 @@ a.menu-mobile-link {
 
 .nav__input:checked~.nav__mobile {
     transform: translateY(0%);
-    transition: 0.8s ease-out;
-    animation: fadein 0.8s ease-out;
+    /* transition: 0.8s ease-in-out; */
+    animation: fadein 0.8s ease-in-out;
 }
 
 @keyframes fadein {
@@ -768,6 +784,10 @@ a.menu-mobile-link {
         margin-left: 3vh;
         /*  margin-top: 1vh; */
     }
+    .icon {
+        float: right;
+        margin-top: 1vh;
+    }
     .nav__pc {
         display: none;
     }
@@ -812,14 +832,14 @@ a.menu-mobile-link {
         left: 10px;
     }
     .cart div {
-        padding-right: 95px;
-        padding-left: 95px;
+        padding-right: 85px;
+        padding-left: 85px;
         border-left: 1px solid white;
         border-right: 1px solid white;
     }
     .cart .c4 {
-        padding-right: 95px;
-        padding-left: 95px;
+        padding-right: 85px;
+        padding-left: 85px;
         border-left: 1px solid white;
         border-right: 1px solid white;
     }

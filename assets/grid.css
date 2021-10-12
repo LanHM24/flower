@@ -393,8 +393,8 @@
         width: 984px;
     }
     .wide .row {
-        margin-left: -12px;
-        margin-right: -12px;
+        margin-left: -50px;
+        margin-right: -50px;
     }
     .wide .row.sm-gutter {
         margin-left: -5px;
