@@ -107,7 +107,7 @@
 }
 
 .text-home {
-    margin-top: 250px;
+    margin-top: 40vh;
     background-color: #f8e3e8;
     text-align: left;
     line-height: 15px;
@@ -129,12 +129,11 @@
 .videotexta {
     line-height: 50px;
     border: 0.5vh solid black;
-    padding: 7px 15px;
+    padding: 8px 25px;
     background-color: #080506;
     text-decoration: none;
     color: white;
     border-radius: 3vh;
-    font-size: smaller;
 }
 
 .text-home a:hover,
@@ -225,7 +224,7 @@ video {
 
 .videotext {
     text-align: left;
-    margin-top: 85px;
+    margin-top: 10vh;
 }
 
 .videotext h1 {
@@ -269,7 +268,7 @@ video {
 }
 
 .about img {
-    height: 20%;
+    height: 9vh;
     padding: 5px;
 }
 
@@ -387,6 +386,7 @@ item
     font-weight: bolder;
     font-size: 12px;
     top: 10px;
+    left: 15px;
 }
 
 .discount4 {
@@ -431,19 +431,24 @@ item
 .image-item:hover .cart,
 .image-item4:hover .cart {
     display: flex;
-    animation: itemcart ease 1s;
+    animation: itemcart ease 0.4s;
 }
 
 .cart div {
-    padding-right: 40px;
-    padding-left: 40px;
+    font-size: 15px;
+    padding: 11px 98px;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
 
+.cart div:hover,
+.cart .c4:hover {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
 .cart .c4 {
-    padding-right: 74px;
-    padding-left: 74px;
+    font-size: 15px;
+    padding: 11px 140px;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
@@ -453,9 +458,13 @@ item
     padding-left: 12px;
 }
 
-.cart .first {
-    padding-right: 12px;
-    padding-left: 12px;
+.cart i:hover {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.cart .first,
+.cart .end {
+    padding: 12px;
 }
 
 
@@ -674,7 +683,7 @@ a.menu-mobile-link {
     max-width: 100%;
     background-color: rgb(249 252 250);
     transform: translateY(-150%);
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
     z-index: -1;
 }
 
@@ -689,7 +698,7 @@ a.menu-mobile-link {
 .nav__input:checked~.nav__mobile {
     transform: translateY(0%);
     /* transition: 0.8s ease-in-out; */
-    animation: fadein 0.8s ease-in-out;
+    animation: fadein 0.2s ease-in-out;
 }
 
 @keyframes fadein {
@@ -726,7 +735,7 @@ a.menu-mobile-link {
     }
     .Video h2 {
         position: absolute;
-        top: 80px;
+        top: 20rem;
         right: 13px;
         left: 13px;
         font-weight: 900;
@@ -736,7 +745,7 @@ a.menu-mobile-link {
     }
     .videotext {
         text-align: left;
-        margin-top: 20px;
+        margin-top: 10vh;
     }
     .discount {
         position: absolute;
@@ -860,7 +869,7 @@ a.menu-mobile-link {
         padding-bottom: 40px;
     }
     .text-home h1 {
-        font-size: 7vh;
+        font-size: 6vh;
         line-height: 50px;
     }
     .option4 {
@@ -868,5 +877,25 @@ a.menu-mobile-link {
     }
     .Products-flo {
         width: 95%;
+    }
+    .text-home h2 {
+        font-weight: lighter;
+        font-size: 3vh;
+        color: #eb46a1;
+        line-height: 6vh;
+    }
+    .text-home p.text2 {
+        color: gray;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        font-size: 0.8em;
+        line-height: 4vh;
+        width: 100%;
+    }
+    .videotext h1 {
+        /* text-align: left; */
+        /* margin-top: 85px; */
+        line-height: 60px;
+        font-size: 2em;
     }
 }
