@@ -695,6 +695,10 @@ a.menu-mobile-link {
     color: black;
 }
 
+a.menu-mobile-link:hover {
+    color: rgb(221, 31, 126);
+}
+
 .nav__input:checked~.nav__mobile {
     transform: translateY(0%);
     /* transition: 0.8s ease-in-out; */
