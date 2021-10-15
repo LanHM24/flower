@@ -28,7 +28,7 @@
     font-size: large;
     font-weight: 600;
     color: black;
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
     /* line-height: 2em; */
 }
 
@@ -40,11 +40,14 @@
     left: 0;
     z-index: 1;
     background-color: #fff;
+    /* height: 60px; */
+    line-height: 50px;
 }
 
-.heedeer {
+
+/* .heedeer {
     background-color: #fff;
-}
+} */
 
 
 /* .heder {
@@ -68,12 +71,12 @@
     color: rgb(134, 132, 132);
     justify-content: space-around;
     margin-left: 15px;
-    font-size: 2vh;
-    margin-top: 5vh;
+    font-size: 20px;
 }
 
 .middle {
-    margin-top: 2vh;
+    display: flex;
+    justify-items: center;
 }
 
 .middle a:hover {
@@ -81,8 +84,9 @@
 }
 
 .icon {
-    float: right;
-    margin-top: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 2vh; */
 }
 
 .icon i {
@@ -454,8 +458,8 @@ item
 }
 
 .cart i {
-    padding-right: 14px;
-    padding-left: 14px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 .cart i:hover {
@@ -857,16 +861,21 @@ a.menu-mobile-link:hover {
         left: 10px;
     }
     .cart div {
-        padding-right: 85px;
-        padding-left: 85px;
+        /* font-size: 1px; */
+        padding-right: 27%;
+        padding-left: 27%;
         border-left: 1px solid white;
         border-right: 1px solid white;
     }
     .cart .c4 {
-        padding-right: 85px;
-        padding-left: 85px;
+        padding-right: 28%;
+        padding-left: 28%;
         border-left: 1px solid white;
         border-right: 1px solid white;
+    }
+    .cart div:hover,
+    .cart .c4:hover {
+        font-size: 13px;
     }
     .col.l-12.m-12.c-12.bottom {
         padding: 0 20px;
