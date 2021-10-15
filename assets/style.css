@@ -436,7 +436,7 @@ item
 
 .cart div {
     font-size: 15px;
-    padding: 11px 98px;
+    padding: 11px 57px;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
@@ -448,14 +448,14 @@ item
 
 .cart .c4 {
     font-size: 15px;
-    padding: 11px 140px;
+    padding: 11px 90px;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
 
 .cart i {
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 14px;
+    padding-left: 14px;
 }
 
 .cart i:hover {
