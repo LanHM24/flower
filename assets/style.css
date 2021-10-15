@@ -44,10 +44,9 @@
     line-height: 50px;
 }
 
-
-/* .heedeer {
+.heedeer {
     background-color: #fff;
-} */
+}
 
 
 /* .heder {
@@ -85,8 +84,10 @@
 
 .icon {
     display: flex;
-    justify-content: flex-end;
+    float: right;
     /* margin-top: 2vh; */
+    align-items: center;
+    height: 100%;
 }
 
 .icon i {
@@ -648,13 +649,13 @@ item
 /*mobile*/
 
 .nav__bars-btn i {
-    font-size: 34px;
+    font-size: 35px;
     display: none;
 }
 
 .nav__overlay {
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     right: 0;
     bottom: 0;
     left: 0;
@@ -680,7 +681,7 @@ a.menu-mobile-link {
 
 .nav__mobile {
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     left: 0;
     right: 0;
     /* width: 280px; */
@@ -813,9 +814,12 @@ a.menu-mobile-link:hover {
         margin-left: 3vh;
         /*  margin-top: 1vh; */
     }
+    .nav-mobile {
+        display: flex;
+        align-items: center;
+    }
     .icon {
         float: right;
-        margin-top: 1vh;
     }
     .nav__pc {
         display: none;
